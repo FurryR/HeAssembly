@@ -1,0 +1,48 @@
+{
+  "name": "helang2",
+  "version": "1.0.0",
+  "description": "甚至可以输出Hello World",
+  "main": "src/helang.ts",
+  "scripts": {
+    "test": "jest --verbose",
+    "lint": "eslint ./src",
+    "fix": "eslint ./src --fix",
+    "build": "tsc -p ./tsconfig.json"
+  },
+  "jest": {
+    "rootDir": "test",
+    "transform": {
+      "^.+\\.tsx?$": "ts-jest"
+    },
+    "testRegex": "(/__tests__/.*|(\\.|/)(test|spec))\\.ts?$",
+    "moduleFileExtensions": [
+      "ts",
+      "tsx",
+      "js",
+      "jsx",
+      "json",
+      "node"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FurryR/helang2.git"
+  },
+  "author": "FurryR",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FurryR/helang2/issues"
+  },
+  "homepage": "https://github.com/FurryR/helang2#readme",
+  "devDependencies": {
+    "@types/jest": "^28.1.7",
+    "@types/node": "^18.6.3",
+    "@types/ws": "^8.5.3",
+    "@typescript-eslint/eslint-plugin": "^5.32.0",
+    "@typescript-eslint/parser": "^5.32.0",
+    "eslint": "^8.21.0",
+    "jest": "^28.1.2",
+    "ts-jest": "^28.0.5",
+    "typescript": "^4.7.4"
+  }
+}
