@@ -9,7 +9,7 @@
 
 耗费 10 秒甚至 9 秒想出来的 Typescript 何语言 2 代实现，理塘丁真全程监工。
 
-此处删去英文注释是因为~~我不想看到英文注释(来自 Github Copilot 的看法)~~怎么能让老鹰国的网友看懂呢 😡😡😡
+此处删去英文注释是因为 ~~我不想看到英文注释(来自 Github Copilot 的看法)~~ 怎么能让老鹰国的网友看懂呢 😡😡😡
 
 Helang 演示视频见此：https://www.bilibili.com/video/BV1XW4y1h79A/
 
