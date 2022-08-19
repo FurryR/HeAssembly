@@ -1,4 +1,4 @@
-import {HeAssembly} from '../src/helang'
+import {HeAssembly} from '../src/heassembly'
 describe('HeAssembly', () => {
   // verify
   test('op', () => {
