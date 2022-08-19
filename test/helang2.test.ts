@@ -1,8 +1,8 @@
-import {HeLang2} from '../src/helang'
-describe('helang2', () => {
+import {HeAssembly} from '../src/helang'
+describe('HeAssembly', () => {
   // verify
   test('op', () => {
-    const hl = new HeLang2()
+    const hl = new HeAssembly()
     hl.exec([
       'set [0] 1',
       'call add [0] 1',
@@ -11,7 +11,7 @@ describe('helang2', () => {
     expect(hl.get_object('[0]')).toEqual(2)
   })
   test('cmp', () => {
-    const hl = new HeLang2()
+    const hl = new HeAssembly()
     hl.exec([
       'set [0] 1',
       'call cmp == [0] 1',
@@ -20,7 +20,7 @@ describe('helang2', () => {
     expect(hl.get_object('[0]')).toEqual(1)
   })
   test('set_object', () => {
-    const hl = new HeLang2()
+    const hl = new HeAssembly()
     hl.exec([
       'set [0] 1'
     ])

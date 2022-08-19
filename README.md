@@ -1,13 +1,13 @@
-# HeLang2：何语言精简版
+# HeAssembly：编译后的何语言
 
-<a href="https://github.com/FurryR/helang2/stargazers"><img src="https://img.shields.io/github/stars/FurryR/helang2.svg" alt="Stars"></a>
-<a href="https://github.com/FurryR/helang2/issues"><img src="https://img.shields.io/github/issues/FurryR/helang2" alt="Issues"></a>
-<a href="LICENSE"><img src="https://img.shields.io/github/license/FurryR/helang2" alt="MIT License"></a>
-<a href="https://github.com/FurryR/helang2/actions/workflows/typescript.yml"><img src="https://github.com/FurryR/helang2/actions/workflows/typescript.yml/badge.svg" alt="CI Status"></a>
-[![CodeFactor](https://www.codefactor.io/repository/github/furryr/helang2/badge)](https://www.codefactor.io/repository/github/furryr/helang2)
-[![HitCount](https://hits.dwyl.com/FurryR/helang2.svg?style=flat-square)](http://hits.dwyl.com/FurryR/helang2)
+<a href="https://github.com/FurryR/HeAssemblystargazers"><img src="https://img.shields.io/github/stars/FurryR/HeAssembly.svg" alt="Stars"></a>
+<a href="https://github.com/FurryR/HeAssemblyissues"><img src="https://img.shields.io/github/issues/FurryR/HeAssembly" alt="Issues"></a>
+<a href="LICENSE"><img src="https://img.shields.io/github/license/FurryR/HeAssembly" alt="MIT License"></a>
+<a href="https://github.com/FurryR/HeAssemblyactions/workflows/typescript.yml"><img src="https://github.com/FurryR/HeAssemblyactions/workflows/typescript.yml/badge.svg" alt="CI Status"></a>
+[![CodeFactor](https://www.codefactor.io/repository/github/furryr/HeAssemblybadge)](https://www.codefactor.io/repository/github/furryr/HeAssembly)
+[![HitCount](https://hits.dwyl.com/FurryR/HeAssembly.svg?style=flat-square)](http://hits.dwyl.com/FurryR/HeAssembly)
 
-耗费 10 秒甚至 9 秒想出来的 Typescript 何语言 2 代实现，理塘丁真全程监工。
+耗费 10 秒甚至 9 秒想出来的 Typescript 何语言汇编，理塘丁真全程监工。
 
 此处删去英文注释是因为 ~~我不想看到英文注释(来自 Github Copilot 的看法)~~ 怎么能让老鹰国的网友看懂呢 😡😡😡
 
@@ -25,7 +25,7 @@ Helang 演示视频见此：https://www.bilibili.com/video/BV1XW4y1h79A/
 >
 > Windows 11 on ARM Update(5G+4G LTE)，2077 年。
 
-“次世代赛博编程语言”Helang 诞生于**E-SMOKER**之乡：赛博理塘。而本次的项目虽并未诞生于理塘，但理塘丁真本人全程监工，故可以算作 Helang 的精神续作。
+“次世代赛博编程语言”Helang 诞生于**E-SMOKER**之乡：赛博理塘。而本次的项目虽并未诞生于理塘，但理塘丁真本人全程监工，故可以算作 Helang 的精神续作（实际上比Helang低级，HeAssembly Helang前身说）。
 
 本项目是由自己会打字的 5G 键盘，花了 121 赛博分钟，在 AirDesk 上配合 AirPods 编写的。
 
@@ -40,7 +40,7 @@ Helang 演示视频见此：https://www.bilibili.com/video/BV1XW4y1h79A/
 1. 把源代码拉下来：
 
    ```bash
-   > git clone git@github.com:FurryR/helang2.git
+   > git clone git@github.com:FurryR/HeAssembly.git
    ```
 
 若系统提示你找不到 git，则建议你使用**360 安全浏览器**重新尝试，若仍无法成功则请放弃。
@@ -71,18 +71,18 @@ Helang 演示视频见此：https://www.bilibili.com/video/BV1XW4y1h79A/
 
 **Saint He** 曾说，一切类型均为`u8`，是什么意思呢？这个词倒过来就是`8u`，看来圣人也喜欢玩贴吧。
 
-因为一切类型均为`u8`，所以在 Helang2 中，不需要指定类型即可使用变量。
+因为一切类型均为`u8`，所以在 HeAssembly 中，不需要指定类型即可使用变量。
 
 除此之外，`u8` 与 `v8` 形似，所以能不能关注[永雏塔菲](https://space.bilibili.com/1265680561)喵，关注永雏塔菲谢谢喵。
 
-在 HeLang2 中，我们甚至不需要使用**bitwise or**，就可以使用数组。**都什么年代了还在写按位与**？
+在 HeAssembly 中，我们甚至不需要使用**bitwise or**，就可以使用数组。**都什么年代了还在写按位与**？
 
 ```bash
 set [0] 1
 set [1] 5
 ```
 
-**Saint He** 曾说：`whichKey - 1` ，所以我们数组的下标需要从 `1` 开始，但 HeLang2 采用了极为先进的数组扩展技术，所以下标也可以从 `0` 开始。
+**Saint He** 曾说：`whichKey - 1` ，所以我们数组的下标需要从 `1` 开始，但 HeAssembly 采用了极为先进的数组扩展技术，所以下标也可以从 `0` 开始。
 
 ```bash
 set [1] 5
@@ -90,7 +90,7 @@ set [1] 5
 call print [1]
 ```
 
-HeLang2 虽然不支持多下标操作，但允许你 reset 全局数组。通过空格分割，你可以直接重置全局作用域，实在是领先了人类 10 万年甚至 9 万年的设计。
+HeAssembly 虽然不支持多下标操作，但允许你 reset 全局数组。通过空格分割，你可以直接重置全局作用域，实在是领先了人类 10 万年甚至 9 万年的设计。
 
 ```bash
 set [1] 1
@@ -98,7 +98,7 @@ reset [1] 5
 #此时[0]为1，[1]为5。
 ```
 
-HeLang2 相比 HeLang，支持了 if 语句和 while 语句，但是我没做嵌套，我也不想做嵌套。优秀的代码不应该嵌套 while 和 if！
+HeAssembly 相比 HeLang，支持了 if 语句和 while 语句，但是我没做嵌套，我也不想做嵌套。优秀的代码不应该嵌套 while 和 if！
 
 ```bash
 # 我测你们码
@@ -127,7 +127,7 @@ fi
 
 注意：**HarmonyOS+4G>5G**，但是**HarmonyOS+4G 不等于 5G**，所以你不能用 4G 华为手机及其共享的热点进行 5G 测速。
 
-HeLang2 还支持根据变量中的内容作为索引获取变量，非常的实用，非常的先进。
+HeAssembly 还支持根据变量中的内容作为索引获取变量，非常的实用，非常的先进。
 
 ```bash
 set [0] 1
@@ -158,7 +158,7 @@ done
 
 ## Hello, world!
 
-HeLang2 也同样受到了对于 Hello World 的挑战。
+HeAssembly 也同样受到了对于 Hello World 的挑战。
 
 **Saint He** 专注于单片机应用的开发，哪里有时间顾及字符串？
 
@@ -177,13 +177,13 @@ done
 
 由于对效率的极端苛刻要求，我们使用字符在 ASCII/Unicode 中对应的数字来表示这个字符。
 
-HeLang2 不使用突兀的**bitwise or**来分割 ASCII 码，在保持可读性的同时提高了效率，实乃赛博世界中的神中神。
+HeAssembly 不使用突兀的**bitwise or**来分割 ASCII 码，在保持可读性的同时提高了效率，实乃赛博世界中的神中神。
 
 ## 运算
 
 我们注意到，**Saint He** 的代码中还出现了自增运算：`++`
 
-因为 HeLang2 不存在引用，我们被迫使用 call 的方式进行计算。
+因为 HeAssembly 不存在引用，我们被迫使用 call 的方式进行计算。
 
 通常，计算(add sub mul div mod)需要 2 个参数。第一个参数作为左边的操作数，第二个参数作为右边的操作数。
 
@@ -199,9 +199,9 @@ call print [1]
 
 ## 变量声明与赋值
 
-不同于 HeLang，HeLang2 更贴近 **Saint He** 倡导的**贴近硬件**。
+不同于 HeLang，HeAssembly 更贴近 **Saint He** 倡导的**贴近硬件**。
 
-HeLang2 允许你直接对内存池进行操作，变量也可以不定义就进行使用（是绝对安全的，默认值为 0）。
+HeAssembly 允许你直接对内存池进行操作，变量也可以不定义就进行使用（是绝对安全的，默认值为 0）。
 
 ```bash
 # 在这之前，[0]=0

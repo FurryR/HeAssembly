@@ -1,17 +1,17 @@
-# HeLang2 开发者说明
+# HeAssembly 开发者说明
 
-你也可以在你的 Typescript 项目中嵌入 HeLang2，这样就可以让更多人观赏 **Cyberspaces** 并大脑升级。
+你也可以在你的 Typescript 项目中嵌入 HeAssembly，这样就可以让更多人观赏 **Cyberspaces** 并大脑升级。
 
-使用以下语句引入一个 HeLang2 上下文：
+使用以下语句引入一个 HeAssembly 上下文：
   
 ```typescript
-import { HeLang2 } from './helang'
+import { HeAssembly } from './heassembly'
 ```
 
-创建一个HeLang2 上下文：
+创建一个HeAssembly 上下文：
 
 ```typescript
-const hl = new HeLang2()
+const hl = new HeAssembly()
 ```
 
 然后，在项目中你可以使用以下方式调用exec：
@@ -23,18 +23,18 @@ hl.exec([
 ])
 ```
 
-若你希望在 Typescript 中获取或修改 HeLang2 中的变量，你可以使用以下两个方法：
+若你希望在 Typescript 中获取或修改 HeAssembly 中的变量，你可以使用以下两个方法：
 
 ```typescript
 hl.get_object("[0]"); // 获取[0]变量的值
 hl.set_object("[0]", 1); // 设置[0]变量的值为1
 ```
 
-这样，你就可以在 Typescript 中使用 HeLang2 中的变量了。
+这样，你就可以在 Typescript 中使用 HeAssembly 中的变量了。
 
-借由**Typescript Compiler**，你也可以在**Web项目中**使用HeLang2，非常的实用，非常的简单。
+借由**Typescript Compiler**，你也可以在**Web项目中**使用HeAssembly，非常的实用，非常的简单。
 
-请运行以下命令来编译HeLang2到JavaScript：
+请运行以下命令来编译HeAssembly到JavaScript：
 
 ```bash
 npm run build

@@ -1,5 +1,5 @@
 {
-  "name": "helang2",
+  "name": "heassembly",
   "version": "1.0.0",
   "description": "甚至可以输出Hello World",
   "main": "src/helang.ts",
@@ -26,14 +26,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/FurryR/helang2.git"
+    "url": "git+https://github.com/FurryR/HeAssembly.git"
   },
   "author": "FurryR",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/FurryR/helang2/issues"
+    "url": "https://github.com/FurryR/HeAssemblyissues"
   },
-  "homepage": "https://github.com/FurryR/helang2#readme",
+  "homepage": "https://github.com/FurryR/HeAssembly#readme",
   "devDependencies": {
     "@types/jest": "^28.1.7",
     "@types/node": "^18.6.3",

@@ -1,4 +1,4 @@
-export class HeLang2 {
+export class HeAssembly {
   private var_map: (number | undefined)[] = []
   private retval = 0
   private while_index = 0
@@ -75,12 +75,12 @@ export class HeLang2 {
     return { cmd_name, args }
   }
   /**
-   * 运行HeLang2代码。
-   * @param code HeLang2代码。代码数组中一个元素只能包含一条语句。
+   * 运行HeAssembly代码。
+   * @param code HeAssembly代码。代码数组中一个元素只能包含一条语句。
    */
   exec(code: string[]): void {
     for (let i = 0; i < code.length; i++) {
-      const { cmd_name, args } = HeLang2.parse(code[i])
+      const { cmd_name, args } = HeAssembly.parse(code[i])
       switch (cmd_name) {
         case 'fi':
         case '#': {
@@ -98,7 +98,7 @@ export class HeLang2 {
           if (!this.get_object(args[0]))
             while (
               i < code.length - 1 &&
-              HeLang2.parse(code[++i]).cmd_name != 'fi'
+              HeAssembly.parse(code[++i]).cmd_name != 'fi'
             );
           break
         }
@@ -112,7 +112,7 @@ export class HeLang2 {
             this.while_jump = true
             while (
               i < code.length - 1 &&
-              HeLang2.parse(code[++i]).cmd_name != 'done'
+              HeAssembly.parse(code[++i]).cmd_name != 'done'
             );
           }
           this.while_index = i
@@ -123,7 +123,7 @@ export class HeLang2 {
           this.while_jump = cmd_name == 'break'
           while (
             i < code.length - 1 &&
-            HeLang2.parse(code[++i]).cmd_name != 'done'
+            HeAssembly.parse(code[++i]).cmd_name != 'done'
           );
           break
         }
@@ -218,7 +218,7 @@ export class HeLang2 {
             // 注：真想认真用就把这个删掉
             case 'cyberspaces': {
               console.log(
-                '正在检查你的位置。请确认你已经打开了定位服务，并且已授权给HeLang2使用。'
+                '正在检查你的位置。请确认你已经打开了定位服务，并且已授权给HeAssembly使用。'
               )
               console.log(
                 '高德地图定位你在：中华人民共和国四川省甘孜藏族自治州理塘县'
