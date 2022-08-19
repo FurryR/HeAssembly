@@ -1,10 +1,10 @@
 # HeAssembly：编译后的何语言
 
-<a href="https://github.com/FurryR/HeAssemblystargazers"><img src="https://img.shields.io/github/stars/FurryR/HeAssembly.svg" alt="Stars"></a>
-<a href="https://github.com/FurryR/HeAssemblyissues"><img src="https://img.shields.io/github/issues/FurryR/HeAssembly" alt="Issues"></a>
+<a href="https://github.com/FurryR/HeAssembly/stargazers"><img src="https://img.shields.io/github/stars/FurryR/HeAssembly.svg" alt="Stars"></a>
+<a href="https://github.com/FurryR/HeAssembly/issues"><img src="https://img.shields.io/github/issues/FurryR/HeAssembly" alt="Issues"></a>
 <a href="LICENSE"><img src="https://img.shields.io/github/license/FurryR/HeAssembly" alt="MIT License"></a>
-<a href="https://github.com/FurryR/HeAssemblyactions/workflows/typescript.yml"><img src="https://github.com/FurryR/HeAssemblyactions/workflows/typescript.yml/badge.svg" alt="CI Status"></a>
-[![CodeFactor](https://www.codefactor.io/repository/github/furryr/HeAssemblybadge)](https://www.codefactor.io/repository/github/furryr/HeAssembly)
+<a href="https://github.com/FurryR/HeAssembly/actions/workflows/typescript.yml"><img src="https://github.com/FurryR/HeAssembly/actions/workflows/typescript.yml/badge.svg" alt="CI Status"></a>
+[![CodeFactor](https://www.codefactor.io/repository/github/furryr/HeAssembly/badge)](https://www.codefactor.io/repository/github/furryr/HeAssembly)
 [![HitCount](https://hits.dwyl.com/FurryR/HeAssembly.svg?style=flat-square)](http://hits.dwyl.com/FurryR/HeAssembly)
 
 耗费 10 秒甚至 9 秒想出来的 Typescript 何语言汇编，理塘丁真全程监工。
