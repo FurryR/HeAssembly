@@ -1,6 +1,6 @@
 {
   "name": "heassembly",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "甚至可以输出Hello World",
   "main": "src/helang.ts",
   "scripts": {
