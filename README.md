@@ -234,6 +234,19 @@ call 5gtest
 
 注意：**HarmonyOS+4G>5G**，但是**HarmonyOS+4G 不等于 5G**，所以你不能用 4G 华为手机及其共享的热点进行 5G 测速。
 
+## 人性化滴捏
+
+在用户[kifuan](https://github.com/kifuan)锐评cmp是前缀表达式后，我们加入了`cmp2`调用来支持中缀表达式。
+
+```bash
+set [0] 1
+set [1] 1
+# 这不人性化！
+call cmp == [0] [1]
+# 这太人性化了！
+call cmp2 [0] == [1]
+```
+
 ## 总结
 
 关注[永雏塔菲](https://space.bilibili.com/1265680561)喵，关注永雏塔菲谢谢喵。

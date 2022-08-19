@@ -172,6 +172,45 @@ export class HeAssembly {
               ret = result == undefined ? -1 : result
               break
             }
+            // 实验性功能：没事别用
+            case 'cmp2': {
+              switch (args[2]) {
+                case '>': {
+                  ret =
+                    this.get_object(args[1]) > this.get_object(args[3]) ? 1 : 0
+                  break
+                }
+                case '<': {
+                  ret =
+                    this.get_object(args[1]) < this.get_object(args[3]) ? 1 : 0
+                  break
+                }
+                case '==': {
+                  ret =
+                    this.get_object(args[1]) == this.get_object(args[3]) ? 1 : 0
+                  break
+                }
+                case '!=': {
+                  ret =
+                    this.get_object(args[1]) != this.get_object(args[3]) ? 1 : 0
+                  break
+                }
+                case '>=': {
+                  ret =
+                    this.get_object(args[1]) >= this.get_object(args[3]) ? 1 : 0
+                  break
+                }
+                case '<=': {
+                  ret =
+                    this.get_object(args[1]) <= this.get_object(args[3]) ? 1 : 0
+                  break
+                }
+                default: {
+                  throw new Error(`unknown operator ${args[2]}`)
+                }
+              }
+              break
+            }
             case 'cmp': {
               switch (args[1]) {
                 case '>': {
